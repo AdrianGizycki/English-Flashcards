@@ -1,0 +1,19 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "english": "famine",
+      "polish": "głód"
+    },
+    {
+      "id": 2,
+      "english": "starve",
+      "polish": "głodować"
+    },
+    {
+      "id": 3,
+      "english": "sophisticated",
+      "polish": "wyrafinowany"
+    }
+  ]
+}
