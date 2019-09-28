@@ -7,10 +7,11 @@ const btnToggle = document.querySelector(".btn3");
 const flipCard = document.querySelector('.flip-card');
 const base = document.querySelector('.data');
 const addBtn = document.querySelector('.add');
+const speaker = document.querySelector('.speaker-icon');
 
 
 
-fetch('https://my-json-server.typicode.com/AdrianGizycki/Test2/data/')
+fetch('http://localhost:3000/data')
 
   .then(response => response.json())
 
@@ -26,13 +27,22 @@ fetch('https://my-json-server.typicode.com/AdrianGizycki/Test2/data/')
       divContents1.innerText = (data)[counter].english;
       divContents2.innerText = (data)[counter].polish;
       }
-    });
       
+    });
+    const speak = () => {
+      console.log('cos')
+      var u = new SpeechSynthesisUtterance();
+      u.text = (data)[counter].english;
+      u.lang = 'us-US';
+      u.rate = 1.2;
+      // u.onend = function(event) { alert('Finished in ' + event.elapsedTime + ' seconds.'); }
+      speechSynthesis.speak(u);
+    }
+
+    speaker.addEventListener('click', speak);
       console.log(data[0]);
       console.log((data)[1].english);
-      console.log((data)[1].polish);
-    
-      
+      console.log((data)[1].polish);    
     });
     
 addBtn.addEventListener('submit', function postData(){
@@ -40,12 +50,13 @@ addBtn.addEventListener('submit', function postData(){
 
 flipCard.addEventListener('click', () => {
      flipCard.classList.toggle("flipped")
+     speaker.classList.toggle('hide');
 });
 
 function addData(e) {
   const inputE = document.querySelector('.inputEng').value;
   const inputP = document.querySelector('.inputPl').value;
-  fetch('https://my-json-server.typicode.com/AdrianGizycki/Test2/data/', {
+  fetch('http://localhost:3000/data', {
     method: 'POST',
     body: JSON.stringify({
       english: inputE,
@@ -63,4 +74,5 @@ function addData(e) {
 
 const form = document.querySelector('#form');
 form.addEventListener('submit', addData);
+
 

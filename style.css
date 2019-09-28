@@ -1,6 +1,6 @@
 body {
   font-family: 'Pacifico', cursive;
-  font-family: 'Shadows Into Light Two', cursive;sans-serif;
+  font-family: 'Shadows Into Light Two', cursive, sans-serif;
     height: 100%;
     padding: 0;
     margin: 0;
@@ -53,7 +53,7 @@ body {
     color: black;
     text-align: center;
     font-weight: bold;
-    font-size: 80px;
+    font-size: 200%;
     position: absolute;
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
@@ -67,6 +67,7 @@ body {
 .flip-card .flip-card-front {
   background: rgb(250, 248, 109);
   border-radius: 30px;
+  position: absolute;
 }
 .flip-card .flip-card-back {
     background: rgb(17, 89, 233);
@@ -89,7 +90,7 @@ body {
       background-color: rgb(15, 150, 240);
       width: 3em;
       height: 3em;
-      border-radius: 20px;
+      border-radius: 50%;
       border: none;
       font-weight: bolder;
 }
@@ -103,4 +104,17 @@ body {
   text-align: center;
 }
 
+.speaker-icon {
+  position: relative;
+  top: 80%;
+  left: 45%;  
+  font-size: 150%;
+  width: 40px;
+  height: 40px;
+  
+}
+
+.hide {
+  visibility: hidden;
+}
   

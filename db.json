@@ -15,7 +15,7 @@
       "english": "sophisticated",
       "polish": "wyrafinowany"
     },
-	  {
+    {
       "id": 4,
       "english": "ability",
       "polish": "umiejętność"
@@ -29,7 +29,16 @@
       "id": 6,
       "english": "about",
       "polish": "o"
-    }		
-
+    },
+    {
+      "english": "cat",
+      "polish": "kot",
+      "id": 7
+    },
+    {
+      "english": "above",
+      "polish": "powyżej",
+      "id": 8
+    }
   ]
 }
