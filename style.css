@@ -1,9 +1,15 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Pacifico', cursive;
+  font-family: 'Shadows Into Light Two', cursive;sans-serif;
     height: 100%;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    background: linear-gradient(to top, #dfe2e7, #7b8581);
+  }
+
+  h1 {
+    font-size: 250%;
   }
   .mainDiv {
     height: 100vh;  
@@ -11,13 +17,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
   }
 
   .container {
     width: 300px;
     height: 300px;
     position: relative;
-    border: 1px solid #ccc;
     -webkit-perspective: 800px;
     -moz-perspective: 800px;
     -o-perspective: 800px;
@@ -37,15 +43,14 @@ body {
     -moz-transform-style: preserve-3d;
     -o-transform-style: preserve-3d;
     transform-style: preserve-3d;
-    -webkit-transform-origin: 50% 50%;
-    
+    -webkit-transform-origin: 50% 50%;    
 }
 .flip-card div {
     display: block;
     height: 100%;
     width: 100%;
     line-height: 260px;
-    color: white;
+    color: black;
     text-align: center;
     font-weight: bold;
     font-size: 80px;
@@ -54,15 +59,17 @@ body {
     -moz-backface-visibility: hidden;
     -o-backface-visibility: hidden;
     backface-visibility: hidden;
- 
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.52);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.52);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.52);
     
 }
 .flip-card .flip-card-front {
-  background: red;
+  background: rgb(250, 248, 109);
   border-radius: 30px;
 }
 .flip-card .flip-card-back {
-    background: blue;
+    background: rgb(17, 89, 233);
     -webkit-transform: rotateY( 180deg );
     -moz-transform: rotateY( 180deg );
     -o-transform: rotateY( 180deg );
@@ -77,10 +84,23 @@ body {
     transform: rotateY( 180deg );
 }
 
-  .btn1,
-  .btn2,
-  .btn3 {
+.add {
       margin-top: 20px;
-  }
+      background-color: rgb(15, 150, 240);
+      width: 3em;
+      height: 3em;
+      border-radius: 20px;
+      border: none;
+      font-weight: bolder;
+}
+
+.inputEng,
+.inputPl {
+  border-radius: 10px; 
+  border: 1px solid rgb(243, 241, 241);
+  width: 15em;
+  height: 3em;
+  text-align: center;
+}
 
   

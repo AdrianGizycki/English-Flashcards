@@ -14,6 +14,22 @@
       "id": 3,
       "english": "sophisticated",
       "polish": "wyrafinowany"
-    }
+    },
+	  {
+      "id": 4,
+      "english": "ability",
+      "polish": "umiejętność"
+    },
+    {
+      "id": 5,
+      "english": "able",
+      "polish": "zdolny"
+    },
+    {
+      "id": 6,
+      "english": "about",
+      "polish": "o"
+    }		
+
   ]
 }

@@ -5,27 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico|Shadows+Into+Light+Two&display=swap" rel="stylesheet">
     <title>English Flashcards</title>
 </head>
 <body>
     <div class="mainDiv">
-        <div>
-            <h1> English flashcards</h1>
+            <h1>English flashcards</h1>
             <section class="container">
                 <div class="flip-card">
-                    <div class="flip-card-back">2</div>
-                    <div class="flip-card-front">1</div>
+                    <div class="flip-card-back"></div>
+                    <div class="flip-card-front"></div>
                 </div>
             </section>
             
-            <form>
-                <input class="inputEng"/><input class="inputPl"/><button class="add">Add</button>
+            <form id="form">
+                <input type="text" class="inputEng" placeholder="Word in English"/>
+                <button type="submit" class="add">+</button>
+                <input type="text" class="inputPl" placeholder="Word in Polish"/>
+                
             </form>
             <p class="data"></p>
-                <!-- <input type="text" placeholder="Word in English">
-                <input type="text" placeholder="Word in Polish">
-                <button>Add</button> -->
-            </div>
     </div>
     </div>
 
