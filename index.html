@@ -10,25 +10,32 @@
 </head>
 <body>
     <div class="mainDiv">
-            <h1>English flashcards</h1>
+        <h1>English flashcards</h1>
             <section class="container">
                 <div class="flip-card">
                     <div class="flip-card-back"></div>
                     <div class="flip-card-front"></div> 
                 </div>
-                <i class="speaker-icon fas fa-volume-up"></i>
+                    <i class="speaker-icon fas fa-volume-up"></i>
             </section>
-            <div>
-                <button>FOR RANDOM WORD PUSH</button>
-            </div>
+                <div>
+                    <button>FOR RANDOM WORD PUSH</button>
+                </div>
             <form id="form">
                 <input type="text" class="inputEng" placeholder="Word in English"/>
                 <button type="submit" class="add">+</button>
-                <input type="text" class="inputPl" placeholder="Word in Polish"/>
-                
-            </form>
-            <p class="data"></p>
+                <input type="text" class="inputPl" placeholder="Word in Polish"/>    
+                </form>
+                <p class="data"></p>
     </div>
+    <div class="hide message1">
+        <h1>Uzupełnij pola !</h1>
+        <a href="#" class="close"></a>
+    </div>
+
+    <div class="hide message2">
+        <h1>Dodano nowe słowa !</h1>
+        <a href="#" class="close"></a>
     </div>
 
     <script src="app.js" type="text/javascript"></script> 

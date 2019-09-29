@@ -8,7 +8,11 @@ const flipCard = document.querySelector('.flip-card');
 const base = document.querySelector('.data');
 const addBtn = document.querySelector('.add');
 const speaker = document.querySelector('.speaker-icon');
-
+const close = document.querySelector('.close');
+const visible = document.querySelector('.visible');
+const hide = document.querySelector('.hide');
+const message1 = document.querySelector('.message1');
+const message2 = document.querySelector('.message2')
 
 
 fetch('http://localhost:3000/data')
@@ -45,16 +49,22 @@ fetch('http://localhost:3000/data')
       console.log((data)[1].polish);    
     });
     
-addBtn.addEventListener('submit', function postData(){
-});
+
 
 flipCard.addEventListener('click', () => {
      flipCard.classList.toggle("flipped")
      speaker.classList.toggle('hide');
 });
 
+
 function addData(e) {
-  const inputE = document.querySelector('.inputEng').value;
+  
+  let inputs = document.querySelectorAll("input");
+  
+   if (inputs[0].value == '' || inputs[1].value == '') {
+     message1.classList.toggle('visible');
+  } else {
+    const inputE = document.querySelector('.inputEng').value;
   const inputP = document.querySelector('.inputPl').value;
   fetch('http://localhost:3000/data', {
     method: 'POST',
@@ -68,11 +78,19 @@ function addData(e) {
   })
   .then(response => response.json())
   .then(json => console.log(json))
-
+  message2.classList.toggle('visible');
+  
+     }
   e.preventDefault();
 }
 
 const form = document.querySelector('#form');
 form.addEventListener('submit', addData);
 
+close.addEventListener('click', () => {
+  message1.classList.toggle('visible');
+});
 
+close.addEventListener('click', () => {
+  message2.classList.toggle('visible');
+});
