@@ -41,8 +41,8 @@
       "id": 8
     },
     {
-      "english": "cat",
-      "polish": "kot",
+      "english": "CAT",
+      "polish": "KOT",
       "id": 9
     },
     {
@@ -96,239 +96,24 @@
       "id": 19
     },
     {
-      "english": "add",
-      "polish": "dodać",
-      "id": 20
-    },
-    {
-      "english": "add",
-      "polish": "dodać",
-      "id": 21
-    },
-    {
-      "english": "add",
-      "polish": "dodać",
-      "id": 22
-    },
-    {
       "english": "answer",
       "polish": "odpowiedź",
       "id": 23
     },
     {
-      "english": "add",
-      "polish": "dodać",
-      "id": 24
+      "english": "Approach",
+      "polish": "Podejście",
+      "id": 96
     },
     {
-      "english": "add",
-      "polish": "dodac",
-      "id": 25
+      "english": "certainly",
+      "polish": "na pewno",
+      "id": 97
     },
     {
-      "english": "asdad",
-      "polish": "gfdgd",
-      "id": 26
-    },
-    {
-      "english": "ad",
-      "polish": "ad",
-      "id": 27
-    },
-    {
-      "english": "ad",
-      "polish": "asdas",
-      "id": 28
-    },
-    {
-      "english": "asd",
-      "polish": "sadas",
-      "id": 29
-    },
-    {
-      "english": "fsdsdf",
-      "polish": "sdfsdf",
-      "id": 30
-    },
-    {
-      "english": "sfdsdf",
-      "polish": "sdfsdf",
-      "id": 31
-    },
-    {
-      "english": "ssds",
-      "polish": "sdsd",
-      "id": 32
-    },
-    {
-      "english": "sds",
-      "polish": "sdsds",
-      "id": 33
-    },
-    {
-      "english": "gfdg",
-      "polish": "hf",
-      "id": 34
-    },
-    {
-      "english": "ssss",
-      "polish": "sssss",
-      "id": 35
-    },
-    {
-      "english": "ggg",
-      "polish": "ggg",
-      "id": 36
-    },
-    {
-      "english": "dfgsdfg",
-      "polish": "sdfgsdfg",
-      "id": 37
-    },
-    {
-      "english": "asdf",
-      "polish": "asdf",
-      "id": 38
-    },
-    {
-      "english": "asdf",
-      "polish": "sdfa",
-      "id": 39
-    },
-    {
-      "english": "fghgfd",
-      "polish": "kuhku",
-      "id": 40
-    },
-    {
-      "english": "ggg",
-      "polish": "ggg",
-      "id": 41
-    },
-    {
-      "english": "dad",
-      "polish": "adas",
-      "id": 42
-    },
-    {
-      "english": "sdad",
-      "polish": "dasd",
-      "id": 43
-    },
-    {
-      "english": "sdfds",
-      "polish": "sdfs",
-      "id": 44
-    },
-    {
-      "english": "das",
-      "polish": "asdas",
-      "id": 45
-    },
-    {
-      "english": "sdfsd",
-      "polish": "fsdf",
-      "id": 46
-    },
-    {
-      "english": "sdfsd",
-      "polish": "fsdf",
-      "id": 47
-    },
-    {
-      "english": "dss",
-      "polish": "asdas",
-      "id": 48
-    },
-    {
-      "english": "dsf",
-      "polish": "sdfsd",
-      "id": 49
-    },
-    {
-      "english": "dadasdasda",
-      "polish": "asdas",
-      "id": 50
-    },
-    {
-      "english": "fsdfsd",
-      "polish": "sdfsdf",
-      "id": 51
-    },
-    {
-      "english": "dsff",
-      "polish": "sfsdf",
-      "id": 52
-    },
-    {
-      "english": "sdfs",
-      "polish": "sdfsd",
-      "id": 53
-    },
-    {
-      "english": "sdfsd",
-      "polish": "fsdf",
-      "id": 54
-    },
-    {
-      "english": "sfds",
-      "polish": "dsfsdf",
-      "id": 55
-    },
-    {
-      "english": "dsfsd",
-      "polish": "dsfsdf",
-      "id": 56
-    },
-    {
-      "english": "sdfs",
-      "polish": "sdfs",
-      "id": 57
-    },
-    {
-      "english": "sdfs",
-      "polish": "sdfsd",
-      "id": 58
-    },
-    {
-      "english": "sdfs",
-      "polish": "sdfsd",
-      "id": 59
-    },
-    {
-      "english": "sdfs",
-      "polish": "sdfsd",
-      "id": 60
-    },
-    {
-      "english": "sdfs",
-      "polish": "sdfsd",
-      "id": 61
-    },
-    {
-      "english": "sdfs",
-      "polish": "sdfsd",
-      "id": 62
-    },
-    {
-      "english": "sdfs",
-      "polish": "sdfsd",
-      "id": 63
-    },
-    {
-      "english": "sdfs",
-      "polish": "sdfsd",
-      "id": 64
-    },
-    {
-      "english": "sdsf",
-      "polish": "sds",
-      "id": 65
-    },
-    {
-      "english": "dfgdf",
-      "polish": "gdfgdfg",
-      "id": 66
+      "english": "TEST",
+      "polish": "TEST",
+      "id": 98
     }
   ]
 }

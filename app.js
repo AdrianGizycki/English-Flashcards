@@ -12,7 +12,11 @@ const close = document.querySelector('.close');
 const visible = document.querySelector('.visible');
 const hide = document.querySelector('.hide');
 const message1 = document.querySelector('.message1');
-const message2 = document.querySelector('.message2')
+const message2 = document.querySelector('.message2');
+const close1 = document.querySelector('.close1');
+const close2 = document.querySelector('.close2');
+const addForm = document.querySelector('.add-form');
+const form = document.querySelector('#form');
 
 
 fetch('http://localhost:3000/data')
@@ -22,7 +26,7 @@ fetch('http://localhost:3000/data')
   .then((data) => {
     const min = 0
     var max = data.length;
-    let counter = 0;
+    let counter = Math.floor(Math.random() * (max - min)) + min;
     divContents1.innerText = (data)[counter].english;
     divContents2.innerText = (data)[counter].polish;
     document.addEventListener('keyup', function (e) {
@@ -34,13 +38,21 @@ fetch('http://localhost:3000/data')
       
     });
     const speak = () => {
-      console.log('cos')
-      var u = new SpeechSynthesisUtterance();
-      u.text = (data)[counter].english;
-      u.lang = 'us-US';
-      u.rate = 1.2;
-      // u.onend = function(event) { alert('Finished in ' + event.elapsedTime + ' seconds.'); }
+      // Web Speech API
+      if (flipCard.classList.contains('flipped')){
+        var u = new SpeechSynthesisUtterance();
+      u.text = (data)[counter].polish;
+      u.lang = 'pl-PL';
+      u.rate = 0.8;
       speechSynthesis.speak(u);
+      } else {
+        var u = new SpeechSynthesisUtterance();
+        u.text = (data)[counter].english;
+        u.lang = 'en-EN';
+        u.rate = 0.8;
+        speechSynthesis.speak(u);
+      }
+      
     }
 
     speaker.addEventListener('click', speak);
@@ -65,12 +77,12 @@ function addData(e) {
      message1.classList.toggle('visible');
   } else {
     const inputE = document.querySelector('.inputEng').value;
-  const inputP = document.querySelector('.inputPl').value;
+    const inputP = document.querySelector('.inputPl').value;
   fetch('http://localhost:3000/data', {
     method: 'POST',
     body: JSON.stringify({
-      english: inputE,
-      polish: inputP,
+      english: inputE.toUpperCase(),
+      polish: inputP.toUpperCase(),
     }),
     headers: {
       "Content-type": "application/json; charset=UTF-8"
@@ -78,19 +90,24 @@ function addData(e) {
   })
   .then(response => response.json())
   .then(json => console.log(json))
-  message2.classList.toggle('visible');
-  
-     }
+  .then(message2.classList.toggle('visible'))
+  form.classList.add('hide');
+  addForm.classList.remove('hide');
+  }
   e.preventDefault();
 }
 
-const form = document.querySelector('#form');
 form.addEventListener('submit', addData);
 
-close.addEventListener('click', () => {
-  message1.classList.toggle('visible');
+close1.addEventListener('click', function() {
+  message1.classList.remove('visible');
 });
 
-close.addEventListener('click', () => {
-  message2.classList.toggle('visible');
+close2.addEventListener('click', function() {
+message2.classList.remove('visible');
+});
+
+addForm.addEventListener('click', () => {
+  form.classList.remove('hide');
+  addForm.classList.add('hide');
 });

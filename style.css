@@ -91,7 +91,7 @@ body {
       background-color: rgb(15, 150, 240);
       width: 3em;
       height: 3em;
-      border-radius: 50%;
+      border-radius: 30%;
       border: none;
       font-weight: bolder;
 }
@@ -147,10 +147,11 @@ a.close {
   display: block;
   width: 32px;
   height: 32px;
-  opacity: 0.5;
+  opacity: 0.8;
 }
 .close:hover {
   opacity: 1;
+  transform: scale(1.2);
 }
 .close:before, .close:after {
   position: absolute;
