@@ -1,6 +1,6 @@
 body {
-  font-family: 'Pacifico', cursive;
-  font-family: 'Shadows Into Light Two', cursive, sans-serif;
+  /* font-family: 'Pacifico', cursive; */
+    font-family: 'Shadows Into Light Two', cursive, sans-serif;
     height: 100vh;
     width: 100vw;
     padding: 0;
@@ -11,6 +11,7 @@ body {
 
   h1 {
     font-size: 250%;
+    margin:0;
   }
   .mainDiv {
     height: 100vh;  
@@ -30,7 +31,7 @@ body {
     -o-perspective: 800px;
     perspective: 800px;
     border-radius: 30px; 
-    
+    margin: 6vh;
 }
 .flip-card {
     width: 100%;
@@ -46,7 +47,8 @@ body {
     transform-style: preserve-3d;
     -webkit-transform-origin: 50% 50%;    
 }
-.flip-card div {
+.flip-card-back,
+.flip-card-front {
     display: block;
     height: 100%;
     width: 100%;
@@ -62,8 +64,7 @@ body {
     backface-visibility: hidden;
     -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.52);
     -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.52);
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.52);
-    
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.52);   
 }
 .flip-card .flip-card-front {
   background: rgb(250, 248, 109);
@@ -86,33 +87,139 @@ body {
     transform: rotateY( 180deg );
 }
 
-.add {
-      margin-top: 20px;
-      background-color: rgb(15, 150, 240);
-      width: 3em;
-      height: 3em;
-      border-radius: 30%;
-      border: none;
-      font-weight: bolder;
+#back-card-content,
+#front-card-content {
+  border-radius: 30%;
+  height: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#buttons-container {
+  margin: 1%;
+}
+
+.backBtn, .nextBtn {
+  border: 1px solid black;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  width: auto;
+}
+
+.speaker {
+  width: auto;
+  height: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#speaker-img-front,
+#speaker-img-back {
+  cursor: pointer;
+  margin: 4px;
+}
+
+.btn {
+  color: rgb(19, 20, 20);
+  font-weight: bold;
+  background-color: rgb(11, 158, 216);
+  border: 1px solid #1D9AF2;
+  border-radius: 4px;
+  padding: 0 15px;
+  cursor: pointer;
+  width: 8vw;
+  height: 6vh;
+  font-size:20px;
+  background-position: center;
+  transition: background 1.5s;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.52);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.52);
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.52);  
+  font-family: 'Shadows Into Light Two', cursive, sans-serif;
+  
+}
+
+.btn:active {
+  box-shadow: 0 5px 0 rgb(250, 248, 109);
+  top: 3px;
+}
+
+.btn-small {
+  color: rgb(19, 20, 20);
+  font-weight: bold;
+  background-color: rgb(11, 158, 216);
+  border: 1px solid #1D9AF2;
+  border-radius: 4px;
+  padding: 0 15px;
+  cursor: pointer;
+  width: 4vw;
+  height: 6vh;
+  font-size:20px;
+  background-position: center;
+  transition: background 1.5s;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.52);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.52);
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.52);  
+  font-family: 'Shadows Into Light Two', cursive, sans-serif;
+}
+
+.btn-small:active {
+  box-shadow: 0 5px 0 rgb(250, 248, 109);
+  top: 3px;
+}
+  
+
+.add-btn {
+  color: rgb(19, 20, 20);
+  font-weight: bold;
+  background-color: rgb(11, 158, 216);
+  border: 1px solid #1D9AF2;
+  border-radius: 4px;
+  padding: 0 15px;
+  cursor: pointer;
+  width: 8vw;
+  height: 6vh;
+  font-size:20px;
+  background-position: center;
+  transition: background 1.5s;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.52);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.52);
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.52);  
+  font-family: 'Shadows Into Light Two', cursive, sans-serif; 
+}
+
+.add-btn:active {
+box-shadow: 0 5px 0 rgb(250, 248, 109);
+top: 3px;
 }
 
 .inputEng,
 .inputPl {
   border-radius: 10px; 
   border: 1px solid rgb(243, 241, 241);
-  width: 15em;
-  height: 3em;
+  width: 15vw;
+  height: 7vh;
   text-align: center;
+  outline: none;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.52);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.52);
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.52);
+}
+
+.inputEng:focus,
+.inputPl:focus {
+  outline: 0;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, .5);
 }
 
 .speaker-icon {
-  position: relative;
-  top: 80%;
-  left: 45%;  
-  font-size: 150%;
-  width: 40px;
-  height: 40px;
-  
+  height: 50%;
+  display: block;
+ padding: 10px;
 }
 
 .hide {

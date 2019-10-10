@@ -114,6 +114,26 @@
       "english": "TEST",
       "polish": "TEST",
       "id": 98
+    },
+    {
+      "english": "CAT",
+      "polish": "KOT",
+      "id": 99
+    },
+    {
+      "english": "DOG",
+      "polish": "PIES",
+      "id": 100
+    },
+    {
+      "english": "DOG",
+      "polish": "PIES",
+      "id": 101
+    },
+    {
+      "english": "OVERWHELMING",
+      "polish": "PRZYTŁACZAJĄCY",
+      "id": 102
     }
   ]
 }

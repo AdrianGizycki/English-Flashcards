@@ -1,6 +1,6 @@
 
-const divContents1 = document.querySelector(".flip-card-front");
-const divContents2 = document.querySelector(".flip-card-back");
+const divContents1 = document.querySelector("#front-card-content");
+const divContents2 = document.querySelector("#back-card-content");
 const btnBeck = document.querySelector(".btn1");
 const btnNext = document.querySelector(".btn2");
 const btnToggle = document.querySelector(".btn3");
@@ -15,8 +15,12 @@ const message1 = document.querySelector('.message1');
 const message2 = document.querySelector('.message2');
 const close1 = document.querySelector('.close1');
 const close2 = document.querySelector('.close2');
-const addForm = document.querySelector('.add-form');
+const addForm = document.querySelector('.add-btn');
 const form = document.querySelector('#form');
+const speakerImgBack = document.querySelector('#speaker-img-back');
+const speakerImgFront = document.querySelector('#speaker-img-front');
+console.log(speakerImgBack);
+console.log(speakerImgFront);
 
 
 fetch('http://localhost:3000/data')
@@ -37,36 +41,27 @@ fetch('http://localhost:3000/data')
       }
       
     });
-    const speak = () => {
-      // Web Speech API
-      if (flipCard.classList.contains('flipped')){
-        var u = new SpeechSynthesisUtterance();
-      u.text = (data)[counter].polish;
-      u.lang = 'pl-PL';
-      u.rate = 0.8;
-      speechSynthesis.speak(u);
-      } else {
-        var u = new SpeechSynthesisUtterance();
+
+    speakerImgFront.addEventListener('click', (e) => {
+      e.stopPropagation();
+      var u = new SpeechSynthesisUtterance();
         u.text = (data)[counter].english;
         u.lang = 'en-EN';
         u.rate = 0.8;
         speechSynthesis.speak(u);
-      }
-      
-    }
-
-    speaker.addEventListener('click', speak);
-      console.log(data[0]);
-      console.log((data)[1].english);
-      console.log((data)[1].polish);    
     });
-    
+    speakerImgBack.addEventListener('click', (e) => {
+      e.stopPropagation();
+      var u = new SpeechSynthesisUtterance();
+      u.text = (data)[counter].polish;
+      u.lang = 'pl-PL';
+      u.rate = 0.8;
+      speechSynthesis.speak(u);
+    });
+  
+      // Web Speech API
+      
 
-
-flipCard.addEventListener('click', () => {
-     flipCard.classList.toggle("flipped")
-     speaker.classList.toggle('hide');
-});
 
 
 function addData(e) {
@@ -93,6 +88,7 @@ function addData(e) {
   .then(message2.classList.toggle('visible'))
   form.classList.add('hide');
   addForm.classList.remove('hide');
+  reset();
   }
   e.preventDefault();
 }
@@ -111,3 +107,12 @@ addForm.addEventListener('click', () => {
   form.classList.remove('hide');
   addForm.classList.add('hide');
 });
+
+flipCard.addEventListener('click', () => {
+  flipCard.classList.toggle("flipped")
+ //  speaker.classList.toggle('hide');
+});
+
+
+})
+
