@@ -27,15 +27,15 @@
             </div>
                 <div id='buttons-container'>
                     <button class="btn-small btn-back"> << </button>
-                    <button class="btn"> Random </button>
+                    <button class="btn-random"> Random </button>
                     <button class="btn-small btn-next"> >> </button>
                 </div>
                 <div>
                     <button class="add-btn">Add</button>
                 </div>
             <form id="form" class='hide'>
-                <input type="text" class="inputEng" placeholder="Word in English"/>
-                <input type="text" class="inputPl" placeholder="Word in Polish"/>
+                <input type="text" class="inputEng" placeholder="Word in English" onfocus="this.value=''" />
+                <input type="text" class="inputPl" placeholder="Word in Polish" onfocus="this.value=''" />
                 <button type="submit" class="add-btn">Add</button>
             </form>
     </div>

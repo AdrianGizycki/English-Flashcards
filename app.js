@@ -1,12 +1,8 @@
 
 const divContents1 = document.querySelector("#front-card-content");
 const divContents2 = document.querySelector("#back-card-content");
-const btnBeck = document.querySelector(".btn1");
-const btnNext = document.querySelector(".btn2");
-const btnToggle = document.querySelector(".btn3");
 const flipCard = document.querySelector('.flip-card');
 const base = document.querySelector('.data');
-const addBtn = document.querySelector('.add');
 const speaker = document.querySelector('.speaker-icon');
 const close = document.querySelector('.close');
 const visible = document.querySelector('.visible');
@@ -19,9 +15,9 @@ const addForm = document.querySelector('.add-btn');
 const form = document.querySelector('#form');
 const speakerImgBack = document.querySelector('#speaker-img-back');
 const speakerImgFront = document.querySelector('#speaker-img-front');
-console.log(speakerImgBack);
-console.log(speakerImgFront);
-
+const btnBack = document.querySelector('.btn-back');
+const btnRandom = document.querySelector('.btn-random');
+const btnNext = document.querySelector('.btn-next');
 
 fetch('http://localhost:3000/data')
 
@@ -33,14 +29,57 @@ fetch('http://localhost:3000/data')
     let counter = Math.floor(Math.random() * (max - min)) + min;
     divContents1.innerText = (data)[counter].english;
     divContents2.innerText = (data)[counter].polish;
-    document.addEventListener('keyup', function (e) {
+
+    window.addEventListener('keyup', function (e) {
       if (e.keyCode === 32) {
       counter = Math.floor(Math.random() * (max - min)) + min;
+      }
+      divContents1.innerText = (data)[counter].english;
+      divContents2.innerText = (data)[counter].polish; 
+    });
+
+    
+
+
+    btnRandom.addEventListener('click', () => {
+      counter = Math.floor(Math.random() * (max - min)) + min;
+      divContents1.innerText = (data)[counter].english;
+      divContents2.innerText = (data)[counter].polish; 
+    });
+
+    function next() {
+      counter++;
+      if (counter > max - 1) {
+        counter = 0;
+      }
       divContents1.innerText = (data)[counter].english;
       divContents2.innerText = (data)[counter].polish;
+    }
+
+    window.addEventListener('keyup', function (e) {
+      if (e.keyCode === 39) {
+      next()
       }
-      
     });
+
+    btnNext.addEventListener('click', next);
+
+    function back() {
+      counter--;
+      if (counter < 0) {
+        counter = max - 1;
+      }
+      divContents1.innerText = (data)[counter].english;
+      divContents2.innerText = (data)[counter].polish;
+    }
+
+    window.addEventListener('keyup', function (e) {
+      if (e.keyCode === 37) {
+      back()
+      }
+    });
+
+    btnBack.addEventListener('click', back);
 
     speakerImgFront.addEventListener('click', (e) => {
       e.stopPropagation();
@@ -61,9 +100,6 @@ fetch('http://localhost:3000/data')
   
       // Web Speech API
       
-
-
-
 function addData(e) {
   
   let inputs = document.querySelectorAll("input");
@@ -88,7 +124,7 @@ function addData(e) {
   .then(message2.classList.toggle('visible'))
   form.classList.add('hide');
   addForm.classList.remove('hide');
-  reset();
+  inputs.reset();
   }
   e.preventDefault();
 }
@@ -108,11 +144,28 @@ addForm.addEventListener('click', () => {
   addForm.classList.add('hide');
 });
 
-flipCard.addEventListener('click', () => {
-  flipCard.classList.toggle("flipped")
- //  speaker.classList.toggle('hide');
-});
+function change() {
+  flipCard.classList.toggle("flipped");
+  if (flipCard.classList.contains('flipped')) {
+    btnBack.style.backgroundColor = 'rgb(250, 248, 109)';
+    btnRandom.style.backgroundColor = 'rgb(250, 248, 109)';
+    btnNext.style.backgroundColor = 'rgb(250, 248, 109)';
+    addForm.style.backgroundColor = 'rgb(250, 248, 109)';
+  } else {
+    btnBack.style.backgroundColor = 'rgb(11, 158, 216)';
+    btnRandom.style.backgroundColor = 'rgb(11, 158, 216)';
+    btnNext.style.backgroundColor = 'rgb(11, 158, 216)';
+    addForm.style.backgroundColor = 'rgb(11, 158, 216)';
+  }
+}
 
+flipCard.addEventListener('click', change);
+
+window.addEventListener('keyup', function (e) {
+  if (e.keyCode === 38) {
+    change();
+  }
+});
 
 })
 

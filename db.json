@@ -1,139 +1,134 @@
 {
   "data": [
     {
-      "id": 1,
-      "english": "famine",
-      "polish": "głód"
+      "english": "STRENGTHS",
+      "polish": "SILNE STRONY",
+      "id": 1
     },
     {
-      "id": 2,
-      "english": "starve",
-      "polish": "głodować"
+      "english": "UNIMAGINATIVELY",
+      "polish": "BEZ WYOBRAŹNI",
+      "id": 2
     },
     {
-      "id": 3,
-      "english": "sophisticated",
-      "polish": "wyrafinowany"
+      "english": "ABILITY",
+      "polish": "UMIEJĘTNOŚĆ",
+      "id": 3
     },
     {
-      "id": 4,
-      "english": "ability",
-      "polish": "umiejętność"
+      "english": "ABLE",
+      "polish": "ZDOLNY",
+      "id": 4
     },
     {
-      "id": 5,
-      "english": "able",
-      "polish": "zdolny"
+      "english": "ACCORDINGLY",
+      "polish": "ODPOWIEDNIO",
+      "id": 5
     },
     {
-      "id": 6,
-      "english": "about",
-      "polish": "o"
+      "english": "AGREEMENT",
+      "polish": "UMOWA",
+      "id": 6
     },
     {
-      "english": "cat",
-      "polish": "kot",
+      "english": "ALTHOUGH",
+      "polish": "MIMO ŻE",
       "id": 7
     },
     {
-      "english": "above",
-      "polish": "powyżej",
+      "english": "APPROACH",
+      "polish": "PODEJŚCIE",
       "id": 8
     },
     {
-      "english": "CAT",
-      "polish": "KOT",
+      "english": "ARGUE",
+      "polish": "KŁÓCIĆ SIĘ",
       "id": 9
     },
     {
-      "english": "word",
-      "polish": "słowo",
+      "english": "ARRIVE",
+      "polish": "PRZYBYĆ",
       "id": 10
     },
     {
-      "english": "add",
-      "polish": "dodać",
+      "english": "ASSUME",
+      "polish": "ZAŁOŻYĆ, PRZYJĄĆ",
       "id": 11
     },
     {
-      "english": "computer",
-      "polish": "komputer",
+      "english": "ASSUME",
+      "polish": "ZAŁOŻYC",
       "id": 12
     },
     {
-      "english": "house",
-      "polish": "dom",
+      "english": "ASSUME",
+      "polish": "ZAŁOŻYC",
       "id": 13
     },
     {
-      "english": "fish",
-      "polish": "ryba",
+      "english": "ASSUME",
+      "polish": "ZAŁOŻYC",
       "id": 14
     },
     {
-      "english": "address",
-      "polish": "adres",
+      "english": "ASSUME",
+      "polish": "ACOS",
       "id": 15
     },
     {
-      "english": "after",
-      "polish": "po",
+      "english": "ABLE",
+      "polish": "ZDOLNY",
       "id": 16
     },
     {
-      "english": "almost",
-      "polish": "prawie",
+      "english": "ABLE",
+      "polish": "ZDLONY",
       "id": 17
     },
     {
-      "english": "administration",
-      "polish": "administracja",
+      "english": "ABLE",
+      "polish": "BABLE",
       "id": 18
     },
     {
-      "english": "among",
-      "polish": "pośród",
+      "english": "ABLE",
+      "polish": "ADS",
       "id": 19
     },
     {
-      "english": "answer",
-      "polish": "odpowiedź",
+      "english": "ABLE",
+      "polish": "ADFS",
+      "id": 20
+    },
+    {
+      "english": "ABLE",
+      "polish": "SAFD",
+      "id": 21
+    },
+    {
+      "english": "ABLE",
+      "polish": "DSF",
+      "id": 22
+    },
+    {
+      "english": "ABLE",
+      "polish": "DSF",
       "id": 23
     },
     {
-      "english": "Approach",
-      "polish": "Podejście",
-      "id": 96
+      "english": "DSFS",
+      "polish": "DFS",
+      "id": 24
     },
     {
-      "english": "certainly",
-      "polish": "na pewno",
-      "id": 97
+      "english": "DSFS",
+      "polish": "SDF",
+      "id": 25
     },
     {
-      "english": "TEST",
-      "polish": "TEST",
-      "id": 98
-    },
-    {
-      "english": "CAT",
-      "polish": "KOT",
-      "id": 99
-    },
-    {
-      "english": "DOG",
-      "polish": "PIES",
-      "id": 100
-    },
-    {
-      "english": "DOG",
-      "polish": "PIES",
-      "id": 101
-    },
-    {
-      "english": "OVERWHELMING",
-      "polish": "PRZYTŁACZAJĄCY",
-      "id": 102
+      "english": "FDGDFGDF",
+      "polish": "FDGDG",
+      "id": 26
     }
   ]
 }

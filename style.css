@@ -1,5 +1,4 @@
 body {
-  /* font-family: 'Pacifico', cursive; */
     font-family: 'Shadows Into Light Two', cursive, sans-serif;
     height: 100vh;
     width: 100vw;
@@ -11,7 +10,7 @@ body {
 
   h1 {
     font-size: 250%;
-    margin:0;
+    margin: 0;
   }
   .mainDiv {
     height: 100vh;  
@@ -23,15 +22,15 @@ body {
   }
 
   .container {
-    width: 300px;
-    height: 300px;
+    width: 20rem;
+    height: 20rem;
     position: relative;
     -webkit-perspective: 800px;
     -moz-perspective: 800px;
     -o-perspective: 800px;
     perspective: 800px;
     border-radius: 30px; 
-    margin: 6vh;
+    margin: 1%;
 }
 .flip-card {
     width: 100%;
@@ -57,6 +56,7 @@ body {
     text-align: center;
     font-weight: bold;
     font-size: 200%;
+    letter-spacing: 2px;
     position: absolute;
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
@@ -72,7 +72,7 @@ body {
   position: absolute;
 }
 .flip-card .flip-card-back {
-    background: rgb(17, 89, 233);
+    background: rgb(11, 158, 216);
     -webkit-transform: rotateY( 180deg );
     -moz-transform: rotateY( 180deg );
     -o-transform: rotateY( 180deg );
@@ -123,41 +123,35 @@ body {
   margin: 4px;
 }
 
-.btn {
+.btn-random {
   color: rgb(19, 20, 20);
   font-weight: bold;
   background-color: rgb(11, 158, 216);
-  border: 1px solid #1D9AF2;
+  border: none;
   border-radius: 4px;
   padding: 0 15px;
   cursor: pointer;
   width: 8vw;
-  height: 6vh;
+  height: 4vh;
   font-size:20px;
   background-position: center;
   transition: background 1.5s;
   -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.52);
   -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.52);
   box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.52);  
-  font-family: 'Shadows Into Light Two', cursive, sans-serif;
-  
-}
-
-.btn:active {
-  box-shadow: 0 5px 0 rgb(250, 248, 109);
-  top: 3px;
+  font-family: 'Shadows Into Light Two', cursive, sans-serif; 
 }
 
 .btn-small {
   color: rgb(19, 20, 20);
   font-weight: bold;
   background-color: rgb(11, 158, 216);
-  border: 1px solid #1D9AF2;
+  border: none;
   border-radius: 4px;
   padding: 0 15px;
   cursor: pointer;
   width: 4vw;
-  height: 6vh;
+  height: 4vh;
   font-size:20px;
   background-position: center;
   transition: background 1.5s;
@@ -167,22 +161,16 @@ body {
   font-family: 'Shadows Into Light Two', cursive, sans-serif;
 }
 
-.btn-small:active {
-  box-shadow: 0 5px 0 rgb(250, 248, 109);
-  top: 3px;
-}
-  
-
 .add-btn {
   color: rgb(19, 20, 20);
   font-weight: bold;
   background-color: rgb(11, 158, 216);
-  border: 1px solid #1D9AF2;
   border-radius: 4px;
+  border: none;
   padding: 0 15px;
   cursor: pointer;
-  width: 8vw;
-  height: 6vh;
+  width: 7vw;
+  height: 4vh;
   font-size:20px;
   background-position: center;
   transition: background 1.5s;
@@ -201,8 +189,8 @@ top: 3px;
 .inputPl {
   border-radius: 10px; 
   border: 1px solid rgb(243, 241, 241);
-  width: 15vw;
-  height: 7vh;
+  width: 12vw;
+  height: 5vh;
   text-align: center;
   outline: none;
   -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.52);
