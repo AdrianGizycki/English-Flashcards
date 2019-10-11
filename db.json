@@ -56,79 +56,14 @@
       "id": 11
     },
     {
-      "english": "ASSUME",
-      "polish": "ZAŁOŻYC",
+      "english": "WISDOM",
+      "polish": "MĄDROŚĆ",
       "id": 12
     },
     {
-      "english": "ASSUME",
-      "polish": "ZAŁOŻYC",
+      "english": "RELIFE",
+      "polish": "ULGA",
       "id": 13
-    },
-    {
-      "english": "ASSUME",
-      "polish": "ZAŁOŻYC",
-      "id": 14
-    },
-    {
-      "english": "ASSUME",
-      "polish": "ACOS",
-      "id": 15
-    },
-    {
-      "english": "ABLE",
-      "polish": "ZDOLNY",
-      "id": 16
-    },
-    {
-      "english": "ABLE",
-      "polish": "ZDLONY",
-      "id": 17
-    },
-    {
-      "english": "ABLE",
-      "polish": "BABLE",
-      "id": 18
-    },
-    {
-      "english": "ABLE",
-      "polish": "ADS",
-      "id": 19
-    },
-    {
-      "english": "ABLE",
-      "polish": "ADFS",
-      "id": 20
-    },
-    {
-      "english": "ABLE",
-      "polish": "SAFD",
-      "id": 21
-    },
-    {
-      "english": "ABLE",
-      "polish": "DSF",
-      "id": 22
-    },
-    {
-      "english": "ABLE",
-      "polish": "DSF",
-      "id": 23
-    },
-    {
-      "english": "DSFS",
-      "polish": "DFS",
-      "id": 24
-    },
-    {
-      "english": "DSFS",
-      "polish": "SDF",
-      "id": 25
-    },
-    {
-      "english": "FDGDFGDF",
-      "polish": "FDGDG",
-      "id": 26
     }
   ]
 }

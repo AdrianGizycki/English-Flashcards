@@ -1,70 +1,71 @@
 body {
-    font-family: 'Shadows Into Light Two', cursive, sans-serif;
-    height: 100vh;
-    width: 100vw;
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    background: linear-gradient(to top, #dfe2e7, #7b8581);
-  }
+  font-family: 'Shadows Into Light Two', cursive, sans-serif;
+  height: 100vh;
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background: linear-gradient(to top, #dfe2e7, #7b8581);
+}
 
-  h1 {
-    font-size: 250%;
-    margin: 0;
-  }
-  .mainDiv {
-    height: 100vh;  
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
+h1 {
+  font-size: 250%;
+  margin: 0;
+}
+
+.mainDiv {
+  height: 100vh;  
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 
   .container {
-    width: 20rem;
-    height: 20rem;
-    position: relative;
-    -webkit-perspective: 800px;
-    -moz-perspective: 800px;
-    -o-perspective: 800px;
-    perspective: 800px;
-    border-radius: 30px; 
-    margin: 1%;
+  width: 20rem;
+  height: 20rem;
+  position: relative;
+  -webkit-perspective: 800px;
+  -moz-perspective: 800px;
+  -o-perspective: 800px;
+  perspective: 800px;
+  border-radius: 30px; 
+  margin: 1%;
 }
 .flip-card {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    -webkit-transition: -webkit-transform 1s;
-    -moz-transition: -moz-transform 1s;
-    -o-transition: -o-transform 1s;
-    transition: transform 1s;
-    -webkit-transform-style: preserve-3d;
-    -moz-transform-style: preserve-3d;
-    -o-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-    -webkit-transform-origin: 50% 50%;    
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -webkit-transition: -webkit-transform 1s;
+  -moz-transition: -moz-transform 1s;
+  -o-transition: -o-transform 1s;
+  transition: transform 1s;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform-origin: 50% 50%;    
 }
 .flip-card-back,
 .flip-card-front {
-    display: block;
-    height: 100%;
-    width: 100%;
-    line-height: 260px;
-    color: black;
-    text-align: center;
-    font-weight: bold;
-    font-size: 200%;
-    letter-spacing: 2px;
-    position: absolute;
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-    -o-backface-visibility: hidden;
-    backface-visibility: hidden;
-    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.52);
-    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.52);
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.52);   
+  height: 100%;
+  display: block;
+  line-height: 260px;
+  width: 100%;
+  text-align: center;
+  color: black;
+  font-size: 200%;
+  font-weight: bold;
+  letter-spacing: 2px;
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.52);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.52);
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.52);   
 }
 .flip-card .flip-card-front {
   background: rgb(250, 248, 109);
@@ -72,19 +73,19 @@ body {
   position: absolute;
 }
 .flip-card .flip-card-back {
-    background: rgb(11, 158, 216);
-    -webkit-transform: rotateY( 180deg );
-    -moz-transform: rotateY( 180deg );
-    -o-transform: rotateY( 180deg );
-    transform: rotateY( 180deg );
-    border-radius: 30px;
+  background: rgb(11, 158, 216);
+  -webkit-transform: rotateY( 180deg );
+  -moz-transform: rotateY( 180deg );
+  -o-transform: rotateY( 180deg );
+  transform: rotateY( 180deg );
+  border-radius: 30px;
     
 }
 .flipped {
-    -webkit-transform: rotateY( 180deg );
-    -moz-transform: rotateY( 180deg );
-    -o-transform: rotateY( 180deg );
-    transform: rotateY( 180deg );
+  -webkit-transform: rotateY( 180deg );
+  -moz-transform: rotateY( 180deg );
+  -o-transform: rotateY( 180deg );
+  transform: rotateY( 180deg );
 }
 
 #back-card-content,
@@ -133,7 +134,7 @@ body {
   cursor: pointer;
   width: 8vw;
   height: 4vh;
-  font-size:20px;
+  font-size: 20px;
   background-position: center;
   transition: background 1.5s;
   -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.52);
@@ -152,7 +153,7 @@ body {
   cursor: pointer;
   width: 4vw;
   height: 4vh;
-  font-size:20px;
+  font-size: 20px;
   background-position: center;
   transition: background 1.5s;
   -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.52);

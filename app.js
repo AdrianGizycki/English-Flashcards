@@ -38,9 +38,6 @@ fetch('http://localhost:3000/data')
       divContents2.innerText = (data)[counter].polish; 
     });
 
-    
-
-
     btnRandom.addEventListener('click', () => {
       counter = Math.floor(Math.random() * (max - min)) + min;
       divContents1.innerText = (data)[counter].english;
@@ -124,48 +121,47 @@ function addData(e) {
   .then(message2.classList.toggle('visible'))
   form.classList.add('hide');
   addForm.classList.remove('hide');
-  inputs.reset();
   }
   e.preventDefault();
 }
 
-form.addEventListener('submit', addData);
+  form.addEventListener('submit', addData);
 
-close1.addEventListener('click', function() {
-  message1.classList.remove('visible');
-});
+  close1.addEventListener('click', function() {
+    message1.classList.remove('visible');
+  });
 
-close2.addEventListener('click', function() {
-message2.classList.remove('visible');
-});
+  close2.addEventListener('click', function() {
+    message2.classList.remove('visible');
+  });
 
-addForm.addEventListener('click', () => {
-  form.classList.remove('hide');
-  addForm.classList.add('hide');
-});
+  addForm.addEventListener('click', () => {
+    form.classList.remove('hide');
+    addForm.classList.add('hide');
+  });
 
-function change() {
-  flipCard.classList.toggle("flipped");
-  if (flipCard.classList.contains('flipped')) {
-    btnBack.style.backgroundColor = 'rgb(250, 248, 109)';
-    btnRandom.style.backgroundColor = 'rgb(250, 248, 109)';
-    btnNext.style.backgroundColor = 'rgb(250, 248, 109)';
-    addForm.style.backgroundColor = 'rgb(250, 248, 109)';
-  } else {
-    btnBack.style.backgroundColor = 'rgb(11, 158, 216)';
-    btnRandom.style.backgroundColor = 'rgb(11, 158, 216)';
-    btnNext.style.backgroundColor = 'rgb(11, 158, 216)';
-    addForm.style.backgroundColor = 'rgb(11, 158, 216)';
+  function change() {
+    flipCard.classList.toggle("flipped");
+      if (flipCard.classList.contains('flipped')) {
+        btnBack.style.backgroundColor = 'rgb(250, 248, 109)';
+        btnRandom.style.backgroundColor = 'rgb(250, 248, 109)';
+        btnNext.style.backgroundColor = 'rgb(250, 248, 109)';
+        addForm.style.backgroundColor = 'rgb(250, 248, 109)';
+      } else {
+        btnBack.style.backgroundColor = 'rgb(11, 158, 216)';
+        btnRandom.style.backgroundColor = 'rgb(11, 158, 216)';
+        btnNext.style.backgroundColor = 'rgb(11, 158, 216)';
+        addForm.style.backgroundColor = 'rgb(11, 158, 216)';
+      }
   }
-}
 
-flipCard.addEventListener('click', change);
+  flipCard.addEventListener('click', change);
 
-window.addEventListener('keyup', function (e) {
-  if (e.keyCode === 38) {
+  window.addEventListener('keyup', function (e) {
+    if (e.keyCode === 38) {
     change();
-  }
-});
+    }
+  });
 
-})
+});
 
